@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function runCode() {
+            console.log("got here")
+            //const myCode = document.getElementById("sourcecode").value
+            //return myCode
+        }
+    </script>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        textarea{
+            height: 40vh;
+            width: 60%;
+        }
+        button{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Online Compiler</h1>
+
+<textarea required name="sourcecode"
+placeholder="type in your code here">
+</textarea>
+
+<button type="submit" onclick="runCode()">Run</button>
+<h4>Output:</h4>
+
+<textarea readonly
+name="output"></textarea>
+</body>
+</html>
